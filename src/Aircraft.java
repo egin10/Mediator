@@ -16,6 +16,7 @@ public class Aircraft {
     public void setAltitude(int altitude) {
         this.altitude = altitude;
         this.controller.sendMessage(this);
+        this.controller.registerFlight(this);
     }
 
     public String getFlightNumber() {
